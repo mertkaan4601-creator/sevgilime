@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<title>Benim En Güzel Kadınıma</title>
+
+<style>
+body{
+margin:0;
+padding:0;
+text-align:center;
+font-family:Arial, sans-serif;
+background:url("https://images.unsplash.com/photo-1518199266791-5375a83190b7") no-repeat center center/cover;
+color:black;
+}
+
+.container{
+padding:60px;
+background:rgba(255,255,255,0.6);
+margin:40px;
+border-radius:20px;
+}
+
+h1{
+font-size:40px;
+}
+
+p{
+font-size:22px;
+line-height:1.6;
+}
+
+/* kayan kalpler */
+
+.heart{
+position:fixed;
+top:-10px;
+color:red;
+font-size:24px;
+animation:fall linear forwards;
+}
+
+@keyframes fall{
+to{
+transform:translateY(110vh);
+}
+}
+</style>
+</head>
+
+<body>
+
+<!-- Müzik -->
+<iframe width="0" height="0"
+src="https://www.youtube.com/embed/hQ3-3Gq1y9A?autoplay=1&controls=0&loop=1&playlist=hQ3-3Gq1y9A"
+frameborder="0"
+allow="autoplay">
+</iframe>
+
+<div class="container">
+
+<h1>💐 10.05.2006 eşsiz mükemmel olan yaşlanıcağım kadına!💐</h1>
+
+<p>
+Hayatımda seni tanıdığımdan beri her günüm bir öncekinden daha özel.  
+Seninle güldüğümde dünya daha renkli, seninle konuştuğumda zaman duruyor.  
+Seninle geçirdiğim her saniye, kalbimde bir ömür boyu saklamak istediğim bir anı gibi.  
+Gözlerinin derinliğinde kaybolmak, gülüşünün sıcaklığında ısınmak, ellerinin bana dokunuşunda evimi bulmak gibi…<br><br>
+
+Sen benim için sadece bir sevgili değil, aynı zamanda en iyi arkadaşım, sırdaşım ve hayatımın anlamısın.  
+Her sabah uyanıp seni düşünmek, her gece yatağa yattığımda senin hayalini görmek, bana tarifsiz bir mutluluk veriyor.  
+Senin yanında kendim olabiliyorum, en saf ve en gerçek halimle…<br><br>
+
+Bazen sadece sessizce yanına oturup ellerini tutmak istiyorum;  
+bazen sana bakıp, "Seninle geçirdiğim her an benim için bir mucize" demek…  
+Seninle yaşadığım her duygu, kalbimde ölümsüzleşiyor.  
+İyi ki varsın, iyi ki hayatımda benimlesin, iyi ki seni tanımışım.<br><br>
+
+Hayat bazen karmaşık ve zor görünebilir, ama sen yanımda olduğunda her şey kolaylaşıyor.  
+Senin sevgini hissetmek, bana güç veriyor, umut veriyor ve her şeyi daha güzel yapıyor.  
+Seninle geçen her gün bir kutlama gibi, bir masal gibi…  
+Senin varlığın, kalbimin en değerli hazinesi. 💖<br><br>
+
+Bu siteyi sana, kalbimin derinliklerinden gelen bu sözlerle armağan ediyorum.  
+Her baktığında bil ki, seni düşünen bir kalp burada atıyor,  
+her satırda sana olan sevgimi fısıldıyor ve sana olan özlemimi dile getiriyor.  
+Sen benim en değerli hazinemsin, en güzel masalım, en derin duygum.  
+Ve unutma, bu 8 Mart’ta  seni,  kalbimle kutluyorum. ❤️
+</p>
+
+<p style="margin-top:40px;font-size:26px;">
+seni bulmaktan önce aramak isterim, seni sevmekten önce anlamak isterim, seni bir yaşam boyu bitirmek değil de, sana hep hep yeniden başlamak isterim.
+</p>
+
+</div>
+
+<script>
+function createHeart(){
+const heart=document.createElement("div");
+heart.classList.add("heart");
+heart.innerHTML="❤";
+heart.style.left=Math.random()*100+"vw";
+heart.style.animationDuration=(Math.random()*3+3)+"s";
+document.body.appendChild(heart);
+
+setTimeout(()=>{
+heart.remove();
+},6000);
+}
+
+setInterval(createHeart,300);
+</script>
+
+</body>
+</html>
